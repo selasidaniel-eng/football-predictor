@@ -6,7 +6,14 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from .config import get_settings
-from .routes import leagues_router, teams_router, matches_router
+from .routes import (
+    leagues_router,
+    teams_router,
+    matches_router,
+    auth_router,
+    predictions_router,
+    user_predictions_router,
+)
 
 settings = get_settings()
 
@@ -44,6 +51,9 @@ app.add_middleware(
 app.include_router(leagues_router)
 app.include_router(teams_router)
 app.include_router(matches_router)
+app.include_router(auth_router)
+app.include_router(predictions_router)
+app.include_router(user_predictions_router)
 
 
 # Health check endpoint
