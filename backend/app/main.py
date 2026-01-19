@@ -14,6 +14,7 @@ from .routes import (
     predictions_router,
     user_predictions_router,
 )
+from .routes.scrapers import router as scrapers_router
 
 settings = get_settings()
 
@@ -54,6 +55,7 @@ app.include_router(matches_router)
 app.include_router(auth_router)
 app.include_router(predictions_router)
 app.include_router(user_predictions_router)
+app.include_router(scrapers_router)
 
 
 # Health check endpoint
