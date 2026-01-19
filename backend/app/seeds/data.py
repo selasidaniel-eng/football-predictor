@@ -1,0 +1,123 @@
+"""League seed data with realistic European football leagues."""
+
+LEAGUES_DATA = [
+    {
+        "name": "Premier League",
+        "country": "England",
+        "season": 2025,
+        "description": "English Premier League - Top tier of English football"
+    },
+    {
+        "name": "La Liga",
+        "country": "Spain",
+        "season": 2025,
+        "description": "Spanish La Liga - Top division of Spanish football"
+    },
+    {
+        "name": "Serie A",
+        "country": "Italy",
+        "season": 2025,
+        "description": "Italian Serie A - Top division of Italian football"
+    },
+    {
+        "name": "Bundesliga",
+        "country": "Germany",
+        "season": 2025,
+        "description": "German Bundesliga - Top division of German football"
+    },
+    {
+        "name": "Ligue 1",
+        "country": "France",
+        "season": 2025,
+        "description": "French Ligue 1 - Top division of French football"
+    },
+]
+
+
+TEAMS_DATA = {
+    "Premier League": [
+        {"name": "Manchester United", "country": "England", "city": "Manchester", "founded_year": 1878, "stadium": "Old Trafford", "home_advantage": 1.15, "strength_rating": 88},
+        {"name": "Manchester City", "country": "England", "city": "Manchester", "founded_year": 1880, "stadium": "Etihad Stadium", "home_advantage": 1.12, "strength_rating": 92},
+        {"name": "Liverpool", "country": "England", "city": "Liverpool", "founded_year": 1892, "stadium": "Anfield", "home_advantage": 1.18, "strength_rating": 89},
+        {"name": "Arsenal", "country": "England", "city": "London", "founded_year": 1886, "stadium": "Emirates Stadium", "home_advantage": 1.10, "strength_rating": 85},
+        {"name": "Chelsea", "country": "England", "city": "London", "founded_year": 1905, "stadium": "Stamford Bridge", "home_advantage": 1.08, "strength_rating": 84},
+        {"name": "Tottenham Hotspur", "country": "England", "city": "London", "founded_year": 1882, "stadium": "Tottenham Hotspur Stadium", "home_advantage": 1.09, "strength_rating": 83},
+        {"name": "Brighton & Hove Albion", "country": "England", "city": "Brighton", "founded_year": 1901, "stadium": "Amex Stadium", "home_advantage": 1.06, "strength_rating": 76},
+        {"name": "Newcastle United", "country": "England", "city": "Newcastle", "founded_year": 1892, "stadium": "St James' Park", "home_advantage": 1.14, "strength_rating": 79},
+        {"name": "Everton", "country": "England", "city": "Liverpool", "founded_year": 1878, "stadium": "Goodison Park", "home_advantage": 1.10, "strength_rating": 72},
+        {"name": "West Ham United", "country": "England", "city": "London", "founded_year": 1895, "stadium": "London Stadium", "home_advantage": 1.07, "strength_rating": 71},
+        {"name": "Aston Villa", "country": "England", "city": "Birmingham", "founded_year": 1874, "stadium": "Villa Park", "home_advantage": 1.11, "strength_rating": 75},
+        {"name": "Fulham", "country": "England", "city": "London", "founded_year": 1879, "stadium": "Craven Cottage", "home_advantage": 1.05, "strength_rating": 69},
+        {"name": "Brentford", "country": "England", "city": "London", "founded_year": 1889, "stadium": "Gtech Community Stadium", "home_advantage": 1.08, "strength_rating": 74},
+        {"name": "Crystal Palace", "country": "England", "city": "London", "founded_year": 1905, "stadium": "Selhurst Park", "home_advantage": 1.10, "strength_rating": 67},
+        {"name": "Nottingham Forest", "country": "England", "city": "Nottingham", "founded_year": 1865, "stadium": "City Ground", "home_advantage": 1.12, "strength_rating": 68},
+    ],
+    "La Liga": [
+        {"name": "Real Madrid", "country": "Spain", "city": "Madrid", "founded_year": 1902, "stadium": "Santiago Bernabéu", "home_advantage": 1.20, "strength_rating": 91},
+        {"name": "Barcelona", "country": "Spain", "city": "Barcelona", "founded_year": 1899, "stadium": "Camp Nou", "home_advantage": 1.18, "strength_rating": 87},
+        {"name": "Atlético Madrid", "country": "Spain", "city": "Madrid", "founded_year": 1903, "stadium": "Metropolitano", "home_advantage": 1.15, "strength_rating": 84},
+        {"name": "Sevilla", "country": "Spain", "city": "Seville", "founded_year": 1890, "stadium": "Ramón Sánchez Pizjuán", "home_advantage": 1.10, "strength_rating": 77},
+        {"name": "Real Sociedad", "country": "Spain", "city": "San Sebastián", "founded_year": 1909, "stadium": "Anoeta", "home_advantage": 1.12, "strength_rating": 75},
+        {"name": "Valencia", "country": "Spain", "city": "Valencia", "founded_year": 1919, "stadium": "Mestalla", "home_advantage": 1.09, "strength_rating": 73},
+        {"name": "Villarreal", "country": "Spain", "city": "Villarreal", "founded_year": 1923, "stadium": "La Cerámica", "home_advantage": 1.07, "strength_rating": 72},
+        {"name": "Athletic Bilbao", "country": "Spain", "city": "Bilbao", "founded_year": 1898, "stadium": "San Mamés", "home_advantage": 1.14, "strength_rating": 71},
+        {"name": "Real Betis", "country": "Spain", "city": "Seville", "founded_year": 1907, "stadium": "Benito Villamarín", "home_advantage": 1.08, "strength_rating": 69},
+        {"name": "Celta de Vigo", "country": "Spain", "city": "Vigo", "founded_year": 1923, "stadium": "Balaídos", "home_advantage": 1.06, "strength_rating": 65},
+        {"name": "Rayo Vallecano", "country": "Spain", "city": "Madrid", "founded_year": 1966, "stadium": "Vallecas", "home_advantage": 1.11, "strength_rating": 63},
+        {"name": "Osasuna", "country": "Spain", "city": "Pamplona", "founded_year": 1920, "stadium": "El Sadar", "home_advantage": 1.09, "strength_rating": 62},
+        {"name": "Girona", "country": "Spain", "city": "Girona", "founded_year": 1930, "stadium": "Montilivi", "home_advantage": 1.07, "strength_rating": 64},
+        {"name": "Las Palmas", "country": "Spain", "city": "Las Palmas", "founded_year": 1949, "stadium": "Gran Canaria", "home_advantage": 1.05, "strength_rating": 61},
+        {"name": "Almería", "country": "Spain", "city": "Almería", "founded_year": 1989, "stadium": "Power Horse Stadium", "home_advantage": 1.04, "strength_rating": 59},
+    ],
+    "Serie A": [
+        {"name": "Inter Milan", "country": "Italy", "city": "Milan", "founded_year": 1908, "stadium": "San Siro", "home_advantage": 1.16, "strength_rating": 88},
+        {"name": "AC Milan", "country": "Italy", "city": "Milan", "founded_year": 1899, "stadium": "San Siro", "home_advantage": 1.13, "strength_rating": 84},
+        {"name": "Juventus", "country": "Italy", "city": "Turin", "founded_year": 1897, "stadium": "Allianz Stadium", "home_advantage": 1.14, "strength_rating": 85},
+        {"name": "Napoli", "country": "Italy", "city": "Naples", "founded_year": 1926, "stadium": "San Paolo", "home_advantage": 1.17, "strength_rating": 82},
+        {"name": "Lazio", "country": "Italy", "city": "Rome", "founded_year": 1900, "stadium": "Olimpico", "home_advantage": 1.10, "strength_rating": 78},
+        {"name": "Roma", "country": "Italy", "city": "Rome", "founded_year": 1927, "stadium": "Olimpico", "home_advantage": 1.11, "strength_rating": 76},
+        {"name": "Fiorentina", "country": "Italy", "city": "Florence", "founded_year": 1926, "stadium": "Artemio Franchi", "home_advantage": 1.09, "strength_rating": 73},
+        {"name": "Atalanta", "country": "Italy", "city": "Bergamo", "founded_year": 1907, "stadium": "Gewiss Stadium", "home_advantage": 1.07, "strength_rating": 75},
+        {"name": "Bologna", "country": "Italy", "city": "Bologna", "founded_year": 1909, "stadium": "Stadio Renato Dall'Ara", "home_advantage": 1.08, "strength_rating": 70},
+        {"name": "Torino", "country": "Italy", "city": "Turin", "founded_year": 1906, "stadium": "Olimpico Grande Torino", "home_advantage": 1.09, "strength_rating": 68},
+        {"name": "Sassuolo", "country": "Italy", "city": "Reggio Emilia", "founded_year": 1920, "stadium": "Mapei Stadium", "home_advantage": 1.06, "strength_rating": 65},
+        {"name": "Monza", "country": "Italy", "city": "Monza", "founded_year": 1912, "stadium": "Stadio Brianteo", "home_advantage": 1.05, "strength_rating": 62},
+        {"name": "Udinese", "country": "Italy", "city": "Udine", "founded_year": 1896, "stadium": "Dacia Arena", "home_advantage": 1.06, "strength_rating": 63},
+        {"name": "Cagliari", "country": "Italy", "city": "Cagliari", "founded_year": 1920, "stadium": "Unipol Domus", "home_advantage": 1.07, "strength_rating": 60},
+        {"name": "Como", "country": "Italy", "city": "Como", "founded_year": 1913, "stadium": "Stadio Sinigaglia", "home_advantage": 1.04, "strength_rating": 58},
+    ],
+    "Bundesliga": [
+        {"name": "Bayern Munich", "country": "Germany", "city": "Munich", "founded_year": 1900, "stadium": "Allianz Arena", "home_advantage": 1.19, "strength_rating": 90},
+        {"name": "Borussia Dortmund", "country": "Germany", "city": "Dortmund", "founded_year": 1909, "stadium": "Signal Iduna Park", "home_advantage": 1.17, "strength_rating": 84},
+        {"name": "RB Leipzig", "country": "Germany", "city": "Leipzig", "founded_year": 2009, "stadium": "Red Bull Arena", "home_advantage": 1.10, "strength_rating": 80},
+        {"name": "Bayer Leverkusen", "country": "Germany", "city": "Leverkusen", "founded_year": 1978, "stadium": "BayArena", "home_advantage": 1.08, "strength_rating": 77},
+        {"name": "VfB Stuttgart", "country": "Germany", "city": "Stuttgart", "founded_year": 1893, "stadium": "Mercedes-Benz Arena", "home_advantage": 1.11, "strength_rating": 75},
+        {"name": "SC Freiburg", "country": "Germany", "city": "Freiburg", "founded_year": 1904, "stadium": "Europa-Park Stadion", "home_advantage": 1.09, "strength_rating": 72},
+        {"name": "Union Berlin", "country": "Germany", "city": "Berlin", "founded_year": 1966, "stadium": "Alte Försterei", "home_advantage": 1.12, "strength_rating": 70},
+        {"name": "Werder Bremen", "country": "Germany", "city": "Bremen", "founded_year": 1899, "stadium": "Weser Stadium", "home_advantage": 1.10, "strength_rating": 65},
+        {"name": "Eintracht Frankfurt", "country": "Germany", "city": "Frankfurt", "founded_year": 1899, "stadium": "Deutsche Bank Park", "home_advantage": 1.08, "strength_rating": 68},
+        {"name": "Hoffenheim", "country": "Germany", "city": "Hoffenheim", "founded_year": 1899, "stadium": "PreZero Arena", "home_advantage": 1.05, "strength_rating": 63},
+        {"name": "Mainz 05", "country": "Germany", "city": "Mainz", "founded_year": 1905, "stadium": "Opel Arena", "home_advantage": 1.07, "strength_rating": 61},
+        {"name": "Wolfsburg", "country": "Germany", "city": "Wolfsburg", "founded_year": 1945, "stadium": "Volkswagen Arena", "home_advantage": 1.06, "strength_rating": 64},
+        {"name": "Gladbach", "country": "Germany", "city": "Mönchengladbach", "founded_year": 1900, "stadium": "Borussia-Park", "home_advantage": 1.08, "strength_rating": 66},
+        {"name": "Cologne", "country": "Germany", "city": "Cologne", "founded_year": 1948, "stadium": "RheinEnergieStadion", "home_advantage": 1.09, "strength_rating": 62},
+        {"name": "Heidenheim", "country": "Germany", "city": "Heidenheim", "founded_year": 1846, "stadium": "Voith-Arena", "home_advantage": 1.04, "strength_rating": 57},
+    ],
+    "Ligue 1": [
+        {"name": "Paris Saint-Germain", "country": "France", "city": "Paris", "founded_year": 1970, "stadium": "Parc des Princes", "home_advantage": 1.16, "strength_rating": 86},
+        {"name": "Olympique Marseille", "country": "France", "city": "Marseille", "founded_year": 1899, "stadium": "Vélodrome", "home_advantage": 1.15, "strength_rating": 78},
+        {"name": "AS Monaco", "country": "France", "city": "Monaco", "founded_year": 1924, "stadium": "Stade Louis II", "home_advantage": 1.08, "strength_rating": 74},
+        {"name": "Olympique Lyonnais", "country": "France", "city": "Lyon", "founded_year": 1950, "stadium": "Groupama Stadium", "home_advantage": 1.10, "strength_rating": 75},
+        {"name": "RC Lens", "country": "France", "city": "Lens", "founded_year": 1906, "stadium": "Stade Bollaert-Delelis", "home_advantage": 1.11, "strength_rating": 71},
+        {"name": "OGC Nice", "country": "France", "city": "Nice", "founded_year": 1900, "stadium": "Allianz Riviera", "home_advantage": 1.07, "strength_rating": 68},
+        {"name": "LOSC Lille", "country": "France", "city": "Lille", "founded_year": 1944, "stadium": "Stade Pierre-Mauroy", "home_advantage": 1.09, "strength_rating": 70},
+        {"name": "Stade Rennes", "country": "France", "city": "Rennes", "founded_year": 1901, "stadium": "Roazhon Park", "home_advantage": 1.08, "strength_rating": 66},
+        {"name": "FC Nantes", "country": "France", "city": "Nantes", "founded_year": 1943, "stadium": "Stade de la Beaujoire", "home_advantage": 1.07, "strength_rating": 63},
+        {"name": "AJ Auxerre", "country": "France", "city": "Auxerre", "founded_year": 1905, "stadium": "Stade l'Abbé-Deschamps", "home_advantage": 1.06, "strength_rating": 61},
+        {"name": "Stade Brest", "country": "France", "city": "Brest", "founded_year": 1903, "stadium": "Stade Francis-Le Blé", "home_advantage": 1.08, "strength_rating": 62},
+        {"name": "Toulouse FC", "country": "France", "city": "Toulouse", "founded_year": 1937, "stadium": "Stadium Municipal", "home_advantage": 1.06, "strength_rating": 59},
+        {"name": "Angers SCO", "country": "France", "city": "Angers", "founded_year": 1919, "stadium": "Stade Raymond Kopa", "home_advantage": 1.05, "strength_rating": 58},
+        {"name": "Montpellier HSC", "country": "France", "city": "Montpellier", "founded_year": 1974, "stadium": "Stade de la Mosson", "home_advantage": 1.04, "strength_rating": 56},
+        {"name": "Le Havre AC", "country": "France", "city": "Le Havre", "founded_year": 1872, "stadium": "Stade Océane", "home_advantage": 1.05, "strength_rating": 57},
+    ],
+}
