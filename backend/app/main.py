@@ -15,6 +15,7 @@ from .routes import (
     user_predictions_router,
 )
 from .routes.scrapers import router as scrapers_router
+from .routes import ml as ml_router
 
 settings = get_settings()
 
@@ -56,6 +57,7 @@ app.include_router(auth_router)
 app.include_router(predictions_router)
 app.include_router(user_predictions_router)
 app.include_router(scrapers_router)
+app.include_router(ml_router.router)
 
 
 # Health check endpoint
